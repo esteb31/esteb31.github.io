@@ -1,0 +1,411 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Segoe script, Helvetica, sans-serif;
+}
+/****************************************  NAVBAR *****************************************/
+body{
+  overflow-x: hidden;
+}
+.main-menu ul{
+    width: 100%;
+    display: inline;
+}
+.main-menu li{
+    display: inline;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.main-menu a{
+    text-decoration: none;
+    color: #202929;
+    padding: 10px;
+    display: inline;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+}
+.main-menu a:hover{
+    color: rgba(0,0,0,.5);
+}
+#icons{   
+  font-size: 25px;
+  padding: 0 310px;
+  margin: 30px 10px 0 20px;   
+  display: inline-flex;
+  text-align: right;
+  cursor: pointer;
+  transform: translate(-3%, -115%);
+}
+.face{
+  color: #547AAF;
+}
+.insta{
+  color: #E9337B;
+}
+.be{
+  color: #0A0C11;
+}
+.link{
+  color: #1FB3D1;
+}
+/****************************************  HERO IMAGE *****************************************/
+#hero-image {
+  background:url("images/camara-home.jpg") no-repeat center;
+  height: 34vh;
+  position:relative;
+  background-size: cover;
+}
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  bottom: 5%;
+  vertical-align: text-top;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #202929;
+}
+/****************************************  INFORMACION *****************************************/
+td {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+}
+
+td.first {
+    border-right: 5px solid #202929;
+}
+
+/****************************************  GALLERIA *****************************************/
+.galeria{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(32, 4, 41, 0.25) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #D9E2E2;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+/****************************************  HEXAGONOS *****************************************/
+.hexagono {
+  margin:60px 10px 10px 150px;
+  position: relative;
+  display: block;
+  background-color: #202929;
+  width: 110px;
+  height: 63.9534883721px;
+  transition: all .5s ease-out;
+}
+.hexagono:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .5s ease-out;
+}
+.hexagono::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  background-color: inherit;
+}
+.hexagono::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  background-color: inherit;
+}
+
+.hexagono-content {
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  color: #D9E2E2;
+  font-size: 1.1rem;
+}
+.hexagono-content strong {
+  display: block;
+}
+
+/****************************************  FOOTER *****************************************/
+footer{
+  width: 100%;
+  background: #202929;
+  color: white;
+
+}
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.container-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1{
+  max-width: 400px;
+}
+
+.colum1 h2{
+  font-size: 22px;
+}
+
+.colum1 p{
+  font-size: 14px;
+  color: #D9E2E2;
+  margin-top: 20px;
+}
+
+.row{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row img{
+  width: 36px;
+  height: 36px;
+}
+img{
+  color: red;
+}
+
+.row label{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #D9E2E2;
+}
+
+.colum2{
+  max-width: 400px;
+}
+
+.colum2 h2{
+  font-size: 22px;
+}
+
+.row2{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img{
+  width: 36px;
+  height: 36px;
+}
+
+.row2 label{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #D9E2E2;
+}
+
+.container-footer{
+  width: 100%;
+  background: #101010;
+}
+
+.footer{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.copyright{
+  color: #D9E2E2;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.information a{
+  text-decoration: none;
+  color: #D9E2E2;
+}
+
+
+/****************************************  @MEDIA *****************************************/
+@media screen and (max-width:2186px){
+    div #hex1{
+      position: relative;
+      bottom: -5px;
+      display: flex;
+      left: 100px;
+    }
+    div #hex2{
+      position: relative;
+      bottom: 133px;
+      display: flex;
+      right: -700px;
+    }
+    div #hex3{
+      position: relative;
+      bottom: 260px;
+      display: flex;
+      left: 1350px;
+    }
+    div #hex4{
+      position: relative;
+      bottom: 133px;
+      display: flex;
+      right: -100px;
+    } 
+    div #hex5{
+      position: relative;
+      bottom: 260px;
+      display: flex;
+      right: -700px;
+    }
+    div #hex6{
+      position: relative;
+      bottom: 400px;
+      display: flex;
+      left: 1350px;
+    }    
+}
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2{
+        margin-top: 5px;
+    }    
+}
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+    div #hex1{
+      position: relative;
+      bottom: -5px;
+      display: flex;
+      left: -25px;
+    }
+    div #hex2{
+      position: relative;
+      bottom: 120px;
+      display: flex;
+      left: 270px;
+    }
+    div #hex3{
+      position: relative;
+      bottom: -5px;
+      display: flex;
+      left: -25px;
+    }
+    div #hex4{
+       position: relative;
+      bottom: 120px;
+      display: flex;
+      left: 270px;
+    } 
+    div #hex5{
+      position: relative;
+      bottom: -5px;
+      display: flex;
+      left: -25px;
+    }
+    div #hex6{
+      position: relative;
+      bottom: 120px;
+      display: flex;
+      left: 270px;
+    }  
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }

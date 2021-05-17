@@ -1,0 +1,160 @@
+
+/* Contacto */
+.contact{
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form{
+  margin: 0 auto;
+  height: auto;
+  background: #161E25;
+  padding-bottom: 1px;
+}
+.contact-title{
+  line-height: 30px;
+}
+
+.input-fields h2,
+.input-fields p{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.input-fields p{
+  text-align: center;
+}
+
+.input-fields input[type="text"],
+.input-fields input[type="email"],
+.input-fields input[type="number"] {
+  font-size: 1.2em;
+  color: #fff;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 14px 10px;
+  width: 50%;
+  outline: none;
+  border-radius: 25px;
+  transition: 0.25s;
+  list-style: none;
+  text-decoration: none;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+
+.input-fields input[type="text"]:focus,
+.input-fields input[type="email"]:focus,
+.input-fields input[type="number"]:focus,
+.input-fields input[type="text"]:hover,
+.input-fields input[type="email"]:hover,
+.input-fields input[type="number"]:hover {
+  width: 55%;
+  border-color: #00685e;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.input-fields textarea{
+  color: #fff;
+  font-size: 1.2em;
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  width: 50%;
+}
+
+.input-fields input[type="submit"] {
+  font-size: 1.2em;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 14px 40px;
+  outline: none;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+/* Mapa */
+.google-maps{
+  position: relative;
+  height: 497px;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/*Responsive - media queries*/
+@media screen and (min-width: 768px) {
+.contact-form{
+  width: 50%;
+  height: 497px;
+  float: left;
+}
+.google-maps{
+  width: 50%;
+  height: 497px;
+  float: right;
+}
+.input-fields input[type="text"],
+.input-fields input[type="email"],
+.input-fields input[type="number"],
+.input-fields textarea {
+  width: 50%;
+}
+}
+@media screen and (min-width: 1024px) {
+  .input-fields input[type="text"],
+  .input-fields input[type="email"],
+  .input-fields input[type="number"],
+  .input-fields textarea {
+    width: 40%;
+  }
+  .input-fields input[type="text"]:focus,
+  .input-fields input[type="email"]:focus,
+  .input-fields input[type="number"]:focus,
+  .input-fields input[type="text"]:hover,
+  .input-fields input[type="email"]:hover,
+  .input-fields input[type="number"]:hover {
+    width: 45%;
+    border-color: #00685e;
+  }
+}
