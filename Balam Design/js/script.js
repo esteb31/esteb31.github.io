@@ -1,16 +1,5 @@
 /*---------------- desplazamiento suave del one page ------------------*/
-$('a[href=*#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top-$('#header').height()
-            }, 1800);
-            return false;
-        }
-    }
-});
+
 /**************************************** boton hacia arriba **********************************************/
 $(document).ready(function () {
     $('.ir-arriba').click(function(){
