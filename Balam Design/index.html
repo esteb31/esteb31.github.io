@@ -218,20 +218,6 @@
 			</div>
 		</div>
   </footer>
-  <script>
-    $('a[href*=#]:not[href=#]').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top-$('#header').height()
-                }, 1800);
-                return false;
-            }
-        }
-    });
-  </script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
