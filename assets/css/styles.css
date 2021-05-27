@@ -500,6 +500,8 @@ button:hover{
     margin-right: auto;
   }
   .home__img{
+    width: 450px;
+    bottom: 350px;
     right: 10%;
   }
 }
