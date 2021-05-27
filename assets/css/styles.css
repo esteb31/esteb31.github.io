@@ -8,8 +8,8 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #4070F4;
-  --second-color: #0E2431;
+  --first-color: /*#023E73*/ /*#78B2BF*/ /*#5D7A8C*/ #40591B;
+  --second-color: /*#011526*/ /*#181D26*/ /*#40591B*/ #1F1F1E;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -215,8 +215,8 @@ img{
 }
 .home__img{
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 75px;
+  bottom: 150px;
   width: 295px;
 }
 /*================Modal ================*/
@@ -384,6 +384,38 @@ button:hover{
 }
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 280px){
+    .home__img{
+    bottom: 50px;
+  }
+  .home__img{
+    right: -5%;
+  }
+}
+@media screen and (min-width: 320px){
+    .home__img{
+    bottom: 25px;
+  }
+  .home__img{
+    right: 0%;
+  }
+}
+@media screen and (min-width: 360px){
+    .home__img{
+    bottom: 40px;
+  }
+  .home__img{
+    right: 10%;
+  }
+}
+@media screen and (min-width: 375px){
+    .home__img{
+    bottom: 100px;
+  }
+  .home__img{
+    right: 10%;
+  }
+}
 @media screen and (min-width: 768px){
   body{
     margin: 0;
@@ -435,9 +467,11 @@ button:hover{
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 457px;
-    bottom: 15%;
+    width: 450px;
+    bottom: 100px;
+    right: 10%;
   }
+
 
   .about__container, .skills__container{
     grid-template-columns: repeat(2,1fr);
