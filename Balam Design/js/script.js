@@ -1,5 +1,4 @@
 /*---------------- desplazamiento suave del one page ------------------*/
-$(document).ready(function () {
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -11,7 +10,6 @@ $('a[href*=#]:not([href=#])').click(function() {
             return false;
         }
     }
-});
 });
 /**************************************** boton hacia arriba **********************************************/
 $(document).ready(function () {
