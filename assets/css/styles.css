@@ -493,7 +493,6 @@ button:hover{
     justify-items: center;
   }
 }
-
 @media screen and (min-width: 1024px){
   .bd-grid{
     margin-left: auto;
