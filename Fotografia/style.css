@@ -317,13 +317,14 @@ img{
       position: relative;
       bottom: 133px;
       display: flex;
-      right: -700px;
+      right: -550px;
     }
     div #hex3{
       position: relative;
       bottom: 260px;
       display: flex;
-      left: 1350px;
+      /*left: 1350px;*/
+      right: -1000px;
     }
     div #hex4{
       position: relative;
@@ -335,13 +336,13 @@ img{
       position: relative;
       bottom: 260px;
       display: flex;
-      right: -700px;
+      right: -550px;
     }
     div #hex6{
       position: relative;
       bottom: 400px;
       display: flex;
-      left: 1350px;
+      right: -1000px;
     }    
 }
 @media screen and (max-width:1000px){
